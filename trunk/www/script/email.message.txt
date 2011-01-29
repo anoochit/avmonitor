@@ -1,0 +1,8 @@
+Hello, %OWNER%
+
+AV Monitoring system has been detected the service %SERVICE% on %HOSTNAME% is cannot connect. Plese check your server and fix it, the notification 'll not stop untile you solved the problem already.
+
+
+Regard,
+
+Monitoring Administrator 
