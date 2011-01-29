@@ -2,7 +2,7 @@
 <?php 
 
 /* must config first */
-$pwd="/home/xavier/project/avmon/www/"; // base path for cli script
+$pwd="/home/xavier/project/avmonitor/trunk/www/"; // base path for cli script
 $incattm="n"; // notify include all attempt
 /* must config first */
 

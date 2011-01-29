@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="335.30389"
+   height="50.698193"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.0 r9654"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="logo.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.5008897"
-     inkscape:cx="372.85714"
-     inkscape:cy="921.42857"
+     inkscape:cx="54.056713"
+     inkscape:cy="-22.506504"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -34,7 +34,11 @@
      inkscape:window-height="690"
      inkscape:window-x="0"
      inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -50,7 +54,8 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-75.489053,-57.728918)">
     <text
        xml:space="preserve"
        style="font-size:55.34737015px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -58,17 +63,17 @@
        y="96.804161"
        id="text2985"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/xavier/project/avmon/www/template/default/images/logo-big.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
+       inkscape:export-filename="/home/xavier/project/avmonitor/trunk/www/template/default/images/logo-mid.png"
+       inkscape:export-xdpi="74.558891"
+       inkscape:export-ydpi="74.558891"><tspan
          sodipodi:role="line"
          id="tspan2987"
          x="73.551895"
          y="96.804161"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Museo Sans;-inkscape-font-specification:Museo Sans"><tspan
-           style="fill:#2c89a0"
-           id="tspan2989">red</tspan><tspan
            style="fill:#4d4d4d"
-           id="tspan3005">Monitoring</tspan></tspan></text>
+           id="tspan3005"><tspan
+   style="fill:#0088aa"
+   id="tspan2998">av</tspan>Monitoring</tspan></tspan></text>
   </g>
 </svg>
