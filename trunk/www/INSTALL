@@ -1,0 +1,20 @@
+System requirement
+------------------
+
+* Apache 2
+* PHP5 with Cli
+* MySQL
+
+
+Install
+-------
+
+1. Create database and gant to monitor user.
+2. Import database schema in 'schema' directory.
+3. Copy all content in 'www' directory to your apache's document root eg: /var/www.
+4. Edit 'config.php' update the database connection variables.
+5. Edit 'script/avmonitor.cli.php' upadte current path variable.
+6. Copy 'script/Zend.orig' to PHP incloud directory eg: /usr/share/php., rename to 'Zend'.
+7. Setup crontab by user 'root', update every 15 minutes running the cli command 'script/avmonitor.cli.php' to monitor services and update status to database.
+
+
