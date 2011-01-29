@@ -1,6 +1,8 @@
 <?php 
 
 if ((isset($_POST["submit"])) AND ($_POST["email"]!="")) {
+	
+	/*
 	// check user exist
 	$result=getUserInfoByEmail($_POST["email"]);
 	
@@ -27,6 +29,7 @@ if ((isset($_POST["submit"])) AND ($_POST["email"]!="")) {
 	} else {
 		$msgerror="Your e-mail address is not exist!";
 	}
+	*/
 ?>
 <div class="login-container">
 <h1 id="signup-logo"><a>One Console</a></h1>
