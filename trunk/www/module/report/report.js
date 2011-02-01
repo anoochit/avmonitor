@@ -1,8 +1,8 @@
 $(function() {
 		var dates = $( "#from, #to" ).datepicker({
-			defaultDate: "+1w",
+			defaultDate: "+1m",
 			changeMonth: true,
-			numberOfMonths: 3,
+			numberOfMonths: 2,
 			onSelect: function( selectedDate ) {
 				var option = this.id == "from" ? "minDate" : "maxDate",
 					instance = $( this ).data( "datepicker" );
