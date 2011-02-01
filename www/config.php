@@ -15,6 +15,9 @@ $template="default";
 $smtp_host="localhost";
 $smtp_port="25";
 
+$admin_name="Monitoring Administrator";
+$admin_email="admin@mon.redlinesoft.net";
+
 $crontab_inteval=5;
 
 $db = &ADONewConnection('mysql');

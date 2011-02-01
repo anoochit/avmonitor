@@ -93,8 +93,8 @@ class AVMon {
 	 */
 	function getUserInfoByEmail($email) {
 		$obuser=new AVUser();
-		$obuser->Load("email=".$email." LIMIT 1");
-		return $oblog;
+		$obuser->Load("email='".$email."' LIMIT 1");
+		return $obuser;
 	}
 	
 	
@@ -151,6 +151,27 @@ class AVMon {
 		</select>
 		<?php
 	}
+	
+function sendMassMail($subject,$body,$cname,$emailto) {
+	global $smtp_host,$smtp_port,$admin_name,$admin_email;
+	include_once("include/phpmailer/class.phpmailer.php");
+	
+	$mail = new phpmailer();
+	$mail->CharSet="utf-8";
+	$mail->IsHTML(true);
+	$mail->Host= $smtp_host;
+	$mail->Port= $smtp_port;
+	$mail->Mailer="smtp";
+	$mail->From=$admin_email;
+	$mail->FromName=$admin_name;
+	$mail->Subject=$subject;
+	$mail->Body="<html><body>".stripcslashes($body)."</body></html>";
+	$mail->AddAddress($emailto,$cname);
+	$result=$mail->Send();
+	// Clear all addresses and attachments for next loop
+	$mail->ClearAddresses();
+	return $result;
+}
 
 function ConvertMinutes2Hours($Minutes)
 {
