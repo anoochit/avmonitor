@@ -35,10 +35,10 @@ $res=$obav->getUserInfoBySession($_SESSION['AVID']);
 	} else {
 ?>
 <!-- form -->
-<form method="post" id="form" >
+<form method="post" id="addserver" >
 <table cellpadding="3" cellspacing="0" id="page-button">
 <tr class="table-row">
-	<td>Server Name </td>
+	<td>Server Name</td>
 	<td width="300px"><input type="text" name="servername"></td>
 </tr> 
 <tr class="table-row">

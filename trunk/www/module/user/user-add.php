@@ -23,48 +23,58 @@ $res=$obav->getUserInfoBySession($_SESSION['AVID']);
 </div>
 </div>
 <?php 
-	$obuser=new AVUser();
-	$obuser->Load("id=".$_SESSION["AVID"]);
-
 	if ($_POST["action"]=="add") {
+		$obuser=new AVUser();
+		$obuser->fullname=$_POST["fullname"];
+		$obuser->login=$_POST["login"];
+		$obuser->password=sha1($_POST["password"]);
+		$obuser->priv="a";
+		$obuser->email=$_POST["email"];
+		$obuser->mobile=$_POST["mobile"];
+		$obuser->googleaccount=$_POST["googleaccount"];
+		$obuser->googlepassword=$_POST["googlepassword"];
+		$obuser->enable=1;
+		$obuser->Save();
 		header("Location: ".$url."/user");	
 	} else {
 ?>
 <!-- form -->
-<form method="post" id="form" >
+<form method="post" id="addform" >
 <table cellpadding="3" cellspacing="0" id="page-button">
 <tr class="table-row">
 	<td>Full Name : </td>
-	<td><input type="text" name="fullname" value="<?=$obuser->fullname; ?>"></td>
+	<td><input type="text" name="fullname" ></td>
 </tr>
 <tr class="table-row">
 	<td>Username : </td>
-	<td><?=$obuser->login; ?></td>
+	<td><input type="text" name="login" ></td>
 </tr>
 <tr class="table-row">
 	<td>Password : </td>
-	<td><input type="text" name="password" value=""></td>
+	<td><input type="text" name="password" ></td>
 </tr>
 <tr class="table-row">
 	<td>Email : </td>
-	<td><input type="text" name="email" value="<?=$obuser->email; ?>"></td>
+	<td><input type="text" name="email" ></td>
 </tr>
 <tr class="table-row">
 	<td>Mobile Phone : </td>
-	<td><input type="text" name="mobile" value="<?=$obuser->mobile; ?>"></td>
+	<td><input type="text" name="mobile" ></td>
 </tr>
 <tr class="table-row">
 	<td>Google Account : </td>
-	<td><input type="text" name="googleaccount" value="<?=$obuser->googleaccount; ?>"></td>
+	<td><input type="text" name="googleaccount" ></td>
 </tr>
 <tr class="table-row">
 	<td>Google Account Password : </td>
-	<td><input type="password" name="googlepassword" value="<?=$obuser->googlepassword; ?>"></td>
+	<td><input type="password" name="googlepassword" ></td>
 </tr>
 <tr class="table-row">
 	<td> </td>
-	<td><input class="submit"  type="submit" name="submit" value="Update"><input type="hidden" name="action" value="edit"></td>
+	<td><input class="submit"  type="submit" name="submit" value="Add"><input type="hidden" name="action" value="add"></td>
 </tr>
+</table>
+</form>
 <?
 	}
 ?>
