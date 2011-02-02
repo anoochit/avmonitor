@@ -49,7 +49,7 @@ $res=$obav->getUserInfoBySession($_SESSION['AVID']);
 	<td align="center"> <a href="/user/edit/<?=$item->id; ?>">Edit</a> 
 <?php 
 	// check is user id > 1
-	if (($item->id) > 1) {
+	if ((($item->id) > 1) AND (($item->id)!=$_SESSION['AVID'])) {
 ?>
 	| <a href="/user/delete/<?=$item->id;?>">Delete</a> </td>
 <?php 

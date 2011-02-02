@@ -36,7 +36,7 @@ $res=$obav->getUserInfoBySession($_SESSION['AVID']);
 		} else {
 ?>
 <!-- form -->
-<form method="post" id="form" >
+<form method="post" id="editserver" >
 <table cellpadding="3" cellspacing="0" id="page-button">
 <tr class="table-row">
 	<td>Server Name </td>

@@ -19,7 +19,7 @@
 	// load module javacript	
 	if ($ocreq[0]!="") {
 ?>
-<script type="text/javascript" src="module/<?php echo $ocreq[0]; ?>/<?php echo $ocreq[0]; ?>.js"></script>
+<script type="text/javascript" src="/module/<?php echo $ocreq[0]; ?>/<?php echo $ocreq[0]; ?>.js"></script>
 <?php 
 	}
 ?>

@@ -30,7 +30,7 @@ $res=$obav->getUserInfoBySession($_SESSION['AVID']);
 		$obuser->fullname=$_POST["fullname"];
 		$obuser->login=$_POST["login"];
 		if ($_POST["password"]!="") {
-			$obuser->password=$_POST["password"];
+			$obuser->password=sha1($_POST["password"]);
 		}
 		$obuser->priv="a";
 		$obuser->email=$_POST["email"];
