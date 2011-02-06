@@ -96,7 +96,7 @@ while (!$rs->EOF) {
 				}
 			}
 		} 
-
+		// if flag equal 0 then sent notify message
 		if ($flag=="0") {
 			// notification to email
 			if ($email==true) {
