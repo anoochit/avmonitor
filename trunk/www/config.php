@@ -6,7 +6,7 @@ require_once('include/adodb5/adodb-active-record.inc.php');
 $dbhost="localhost";
 $dbname="avmonitor";
 $dbusername="root";
-$dbpassword="monalisa";
+$dbpassword="xxxxxx";
 
 $url="http://mon.redline.net";
 
@@ -38,11 +38,6 @@ require 'include/avmon/class.log.php';
 
 
 session_start();
-
-
-
-
-
 
 
 ?>
